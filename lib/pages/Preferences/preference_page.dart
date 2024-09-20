@@ -113,10 +113,7 @@ class _UserPreferencePageState extends State<UserPreferencePage> {
       return Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // const Text('Your current preferences:'),
-          // const SizedBox(height: 20),
-          // Expanded(child: _buildCurrentPreferences()),
-          // const SizedBox(height: 20),
+   
           const Text('Update your preferences:'),
           const SizedBox(height: 20),
           Expanded(child: _buildPreferenceButtons()),
@@ -124,18 +121,6 @@ class _UserPreferencePageState extends State<UserPreferencePage> {
       );
     }
   }
-
-  // Widget _buildCurrentPreferences() {
-  //   return SingleChildScrollView(
-  //     child: Wrap(
-  //       spacing: 8.0,
-  //       runSpacing: 8.0,
-  //       children: _selectedPreferences.map((preference) {
-  //         return _buildPreferenceButton(preference, true);
-  //       }).toList(),
-  //     ),
-  //   );
-  // }
 
   Widget _buildPreferenceButtons() {
     return SingleChildScrollView(
