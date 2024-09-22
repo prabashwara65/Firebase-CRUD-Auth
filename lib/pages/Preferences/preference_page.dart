@@ -6,6 +6,7 @@ import 'package:flutter_crud/pages/authFile/auth.dart';
 class UserPreferencePage extends StatefulWidget {
   UserPreferencePage({Key? key}) : super(key: key);
 
+  //Getting user from firebase Auth
   final User? user = Auth().CurrentUser;
 
   @override
